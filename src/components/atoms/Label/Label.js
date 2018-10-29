@@ -16,13 +16,13 @@ const StyledLabelForCheckBox = styled.label`
 
 const Label = (props) => {
   return (
-    props.inputType === 'text' ?
-      <StyledLabel htmlFor={props.name} className="form-label">
-        {props.title}
-      </StyledLabel>
-    : <StyledLabelForCheckBox htmlFor={props.name} className="form-label">
+    props.inputType === 'checkbox' ?
+      <StyledLabelForCheckBox htmlFor={props.name} className="form-label">
         {props.title}
       </StyledLabelForCheckBox>
+    : <StyledLabel htmlFor={props.name} className="form-label">
+        {props.title}
+      </StyledLabel>
   );
 };
 

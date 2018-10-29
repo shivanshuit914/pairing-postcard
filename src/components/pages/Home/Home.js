@@ -3,11 +3,11 @@ import PairingFrom from '../../organisms/PairingForm';
 
 const Home = () => {
   return (
-    <div>
-      <h1>
-        Pairing Postcard
-      </h1>
-      <PairingFrom />
+    <div className="App">
+      <header className="App-header">
+        <h1> Pairing Postcard </h1>
+        <PairingFrom />
+      </header>
     </div>
   );
 };
